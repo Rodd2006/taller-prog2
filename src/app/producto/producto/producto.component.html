@@ -1,0 +1,37 @@
+<p>producto works!</p>
+<div>
+<div class="card-container">
+  <!--<div *ngFor="let producto of producto ; let i = index">
+  <div class="card" >
+     repetitiva para crear producto y precio 
+    
+      <h4>{{ i + 1 }}. Nombre: {{ producto.nombre }}</h4>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+        <p>Precio: {{ producto.precio }} </p>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="card-link">Card link</a>
+        <a href="#" class="card-link">Another link</a>
+      </div>
+      </div>
+    </div>
+    
+  </div>
+<div *ngFor="let producto of producto ; let i = index">
+  <p>{{ i + 1 }}. Nombre: {{ producto.nombre }}</p>
+  <p>Precio: {{ producto.precio }} </p>
+
+</div>
+</div>
+
+<div *ngIf="usuario.isLoggedIn">
+  <p>Bienvenido, {{ usuario.nombre }}</p>
+</div>
+<div *ngIf="!usuario.isLoggedIn" >
+  <p>Por favor,inicia sesion</p>
+</div>
+-->
+<div [ngClass]="{'activo':usuario.activo,'inactivo':!usuario.activo}">
+  {{ usuario.nombre }}
+</div>
