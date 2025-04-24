@@ -91,9 +91,9 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootswatch/dist/sketchy/bootstrap.min.css",
               "@angular/material/prebuilt-themes/cyan-orange.css",
-              "node_modules/boostrap/dist/css/bootsrap.min.css",
-              "node_modules/bootswatch/dist/sketchy/bootsrap.min.css",
               "src/styles.css"
             ],
             "scripts": []

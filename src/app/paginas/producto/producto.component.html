@@ -1,0 +1,37 @@
+<p>producto works!</p>
+<div>
+<div class="card-container">
+  <div *ngFor="let producto of producto ; let i = index">
+  <div class="card" style="width: 18rem;">
+
+    <img src="{{ producto.imagen }}" class="card-img-top">
+    
+
+    <div class="card-body">
+      <h4> {{ producto.nombre }}</h4>
+      <p class="card-text">Descripcion: {{ producto.descripcion }} </p>
+      <p>Precio: {{ producto.precio }} </p>
+      <a href="#" class="btn btn-primary">...</a>
+    </div>
+  </div>
+
+  <!--
+<div *ngFor="let producto of producto ; let i = index">
+  <p>{{ i + 1 }}. Nombre: {{ producto.nombre }}</p>
+  <p>Precio: {{ producto.precio }} </p>
+  <p>{{ producto.imagen }}</p>
+
+</div>
+</div>
+
+<div *ngIf="usuario.isLoggedIn">
+  <p>Bienvenido, {{ usuario.nombre }}</p>
+</div>
+<div *ngIf="!usuario.isLoggedIn" >
+  <p>Por favor,inicia sesion</p>
+</div>
+
+<div [ngClass]="{'activo':usuario.activo,'inactivo':!usuario.activo}">
+  {{ usuario.nombre }}
+</div>
+-->
